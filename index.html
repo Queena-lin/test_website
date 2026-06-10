@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <!--   More 按鈕樣板區塊 -->
+    <svg style="display: none">
+      <!-- 定義一個 ID 為 "more_btn" 的按鈕樣板 -->
+      <symbol id="more_btn" viewBox="0 0 100 50">
+        <rect width="100" height="50" rx="0" fill="#c49a6d" />
+        <text
+          x="40"
+          y="30"
+          fill="white"
+          text-anchor="middle"
+          font-family="sans-serif"
+          font-size="10"
+          font-weight="bold"
+        >
+          More
+        </text>
+        <circle cx="68" cy="26" r="6" fill="white" />
+        <text
+          x="68"
+          y="29"
+          fill="gray"
+          text-anchor="middle"
+          font-family="sans-serif"
+          font-size="8"
+          font-weight="bold"
+        >
+          &rarr;
+        </text>
+      </symbol>
+    </svg>
+    <!-- 開頭載入動畫 -->
+    <!-- <div class="load_animation">
+      <div class="load_img_wrap">
+        <img src="./img/Logo.png" alt="test logo" />
+      </div>
+    </div> -->
+    <!-- 灰色遮片 側邊欄開啟時 -->
+    <div class="gray_filter"></div>
+    <!-- 最上方 開始 -->
+    <header>
+      <!-- 導覽列 開始 -->
+      <nav class="top_navbar">
+        <div class="logo">
+          <a href="#"><img src="./img/Logo.png" alt="test logo" /></a>
+        </div>
+        <!-- 主菜單 -->
+        <ul class="main_menu">
+          <li>
+            <span class="menu_name"><a href="#">About US</a></span>
+            <!-- 下拉式副菜單 -->
+            <ul class="dropdown_menu">
+              <li><a href="#">Story</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="menu_name"><a href="#">Product</a></span>
+            <ul class="dropdown_menu">
+              <li><a href="#">Golf Life | DISCBRAKE</a></li>
+              <li><a href="#">Golf Life | DUAL BLADE</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="menu_name"><a href="#">News</a></span>
+            <ul class="dropdown_menu">
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Media</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="menu_name"><a href="#">Download</a></span>
+            <ul class="dropdown_menu">
+              <li><a href="#">Catalog</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="menu_name"><a href="#">Contact</a></span>
+          </li>
+        </ul>
+        <!-- 側邊菜單 -->
+        <div class="side_menu">
+          <!-- 1180px以上裝置顯示 -->
+          <div class="normail_side_menu">
+            <a class="search_btn" href="javascript:0"
+              ><i class="fa-brands fa-sistrix"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <!-- 低於1180px裝置顯示 漢堡圖示 -->
+          <div class="hamburger_sidemenu_btn">
+            <span class="line"></span>
+          </div>
+        </div>
+      </nav>
+      <!-- 導覽列 結束 -->
+      <!-- 橫幅 -->
+      <div class="banner_wrap">
+        <div class="banner_img">
+          <!-- 1180px以上裝置顯示 -->
+          <div class="two_img_banner">
+            <!-- 左圖 -->
+            <div class="clip clip1"></div>
+            <!-- 右圖 -->
+            <div class="clip clip2"></div>
+          </div>
+          <!-- 低於1180px裝置顯示 -->
+          <div class="one_img_banner"></div>
+        </div>
+        <div class="banner_text">
+          <p>Welcome to TEST</p>
+          <p>Enjoy! Easy Life</p>
+        </div>
+      </div>
+    </header>
+    <!-- 最上方 結束 -->
+    <!-- 網站主要容區 開始 -->
+    <main>
+      <!-- About us 開始-->
+      <section class="about_us_wrap">
+        <div class="about_us">
+          <div class="aboutus_content">
+            <div class="aboutus_left">
+              <h2 class="title">About TEST</h2>
+              <h3 class="subtitle">Enjoy! Easy Life</h3>
+              <div class="us_description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro, corporis.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi numquam vero sunt sed dignissimos libero distinctio
+                  maxime accusamus. Voluptate, aliquid?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro, corporis.
+                </p>
+              </div>
+            </div>
+            <div class="aboutus_right">
+              <figure class="us_img">
+                <img
+                  class="img"
+                  src="./img/aboutUS_imgL.jpg"
+                  alt="test intro"
+                />
+                <a class="img_btn" href="">
+                  <svg width="150" height="75">
+                    <use xlink:href="#more_btn"></use>
+                  </svg>
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About us 結束-->
+      <!-- 裝飾照片 -->
+      <section class="decoImg_box">
+        <figure class="deco_img">
+          <img class="img" src="./img/aboutUs_imgS.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- Product 開始-->
+      <section class="product_area">
+        <!-- 標題區 -->
+        <div class="title_wrap">
+          <a href="" class="title_box">
+            Our Feature Lines <i class="fa-solid fa-circle-arrow-up"></i>
+          </a>
+        </div>
+        <!-- 產品項目區 開始 -->
+        <div class="product_wrap">
+          <div class="prodcut_items_wrap">
+            <div class="prodcut_item_left">
+              <figure>
+                <img class="img" src="./img/golf_left.jpg" alt="" />
+                <a class="img_btn" href="">
+                  <svg width="150" height="75">
+                    <use xlink:href="#more_btn"></use>
+                  </svg>
+                </a>
+              </figure>
+              <h3>Golf Series</h3>
+            </div>
+            <div class="prodcut_item_right">
+              <figure>
+                <img class="img" src="./img/golf_right.jpg" alt="" />
+                <a class="img_btn" href="">
+                  <svg width="150" height="75">
+                    <use xlink:href="#more_btn"></use>
+                  </svg>
+                </a>
+              </figure>
+              <h3>Golf Bag Series</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 產品項目區 結束 -->
+      </section>
+      <!-- Product 結束-->
+      <!-- 產品相冊區 開始-->
+      <section class="album_area">
+        <!-- 標題 -->
+        <div class="title_box">
+          <a href="">
+            Lifestyle-inspired Items <i class="fa-solid fa-circle-arrow-up"></i>
+          </a>
+        </div>
+        <div class="album_box_wrap">
+          <!-- 相冊 滑動標題 -->
+          <div class="album_title">
+            <!-- 滑動區 -->
+            <div class="swipe_area">
+              <!-- 左鍵 -->
+              <a href="javascript:0" class="arrow_left_btn"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <!-- 滑動標題列 -->
+              <div class="swipe_content_wrap">
+                <div class="swipe_content">
+                  <!-- 標題項目 -->
+                  <span
+                    ><a class="active tab_btn" onclick="switchTab('tab1')"
+                      >Golf Putter-DUALBLADE⛳</a
+                    ><i
+                      class="fa-solid fa-chevron-down"
+                      onclick="switchDropList()"
+                    ></i
+                  ></span>
+                  <!-- 標題項目 -->
+                  <span
+                    ><a class="tab_btn" onclick="switchTab('tab2')"
+                      >Golf Putter-DISCBRAKE🏌️</a
+                    ><i
+                      class="fa-solid fa-chevron-down"
+                      onclick="switchDropList()"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+              <!-- 右鍵 -->
+              <a href="javascript:0" class="arrow_right_btn"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <!-- 下拉式選單 -->
+            <div class="dropdown_list">
+              <ul>
+                <li onclick="switchSwipeTitle('tab1')">
+                  <a>Golf Putter-DUALBLADE⛳</a>
+                </li>
+                <li onclick="switchSwipeTitle('tab2')">
+                  <a>Golf Putter-DISCBRAKE🏌️</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 相冊內容 -->
+          <div class="album_content">
+            <!-- Dualblade 分頁 -->
+            <div class="tab_content active" id="tab1">
+              <div class="tab_wrap">
+                <div class="tab_left">
+                  <figure>
+                    <img class="img" src="./img/tab_left_img.jpg" alt="" />
+                  </figure>
+                </div>
+                <div class="tab_right">
+                  <div class="slogan">"Two faces. One perfect stroke."</div>
+                  <div class="title">Golf Putter-DUALBLADE⛳</div>
+                  <ul class="lists">
+                    <li>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Modi esse omnis ex cumque, mollitia voluptatibus!
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vero, aperiam.
+                    </li>
+                    <li>Modi esse omnis ex cumque, mollitia voluptatibus!</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Discbrake 分頁 -->
+            <div class="tab_content" id="tab2">
+              <div class="tab_wrap">
+                <div class="tab_left">
+                  <figure>
+                    <img class="img" src="./img/tab_right_img.jpg" alt="" />
+                  </figure>
+                </div>
+                <div class="tab_right">
+                  <div class="slogan">
+                    "Drive it forward. Sink it with style."
+                  </div>
+                  <div class="title">Golf Putter-DISCBRAKE🏌️</div>
+                  <ul class="lists">
+                    <li>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Modi esse omnis ex cumque, mollitia voluptatibus!
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vero, aperiam.
+                    </li>
+                    <li>Modi esse omnis ex cumque, mollitia voluptatibus!</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 產品相冊區 結束-->
+      <!-- 照片集 開始-->
+      <section class="picture_display">
+        <div class="picture_wrap">
+          <div class="pic_left">
+            <div class="left_top">
+              <a href="#">
+                <img class="img" src="./img/golf_left.jpg" alt="" />
+              </a>
+              <a href="#">
+                <img class="img" src="./img/golf_right.jpg" alt="" />
+              </a>
+            </div>
+            <div class="left_bottom">
+              <a href="#">
+                <img class="img" src="./img/golf01.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="pic_right">
+            <div class="right_top">
+              <a href="#">
+                <img class="img" src="./img/golf02.jpg" alt="" />
+              </a>
+            </div>
+            <div class="right_bottom">
+              <a href="#">
+                <img class="img" src="./img/tab_left_img.jpg" alt="" />
+              </a>
+              <a href="#">
+                <img class="img" src="./img/tab_right_img.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="slide_btn_area">
+          <a
+            href="javascript:0;"
+            class="slide_btn active"
+            id="btn_left"
+            onclick="switchSlideBtn('btn_left')"
+          ></a>
+          <a
+            href="javascript:0;"
+            class="slide_btn"
+            id="btn_right"
+            onclick="switchSlideBtn('btn_right')"
+          ></a>
+        </div>
+      </section>
+      <!-- 照片集 結束-->
+      <!-- 媒體區 開始-->
+      <section class="media_area">
+        <div class="media_wrap">
+          <div class="media_title_box">
+            <a href="#">Media<i class="fa-solid fa-circle-arrow-up"></i></a>
+            <p>Explore our exclusive video collections.</p>
+            <div class="btns_wrap">
+              <div class="btn_group">
+                <div class="group_left">
+                  <i class="fa-solid fa-chevron-left"></i>
+                  <span>|</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <ul class="group_right">
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="media_link">
+            <a href="javascript:0">
+              <img class="img" src="./img/golf02.jpg" alt="" />
+              <div>
+                JAPAN GOLF FAIR 2026<i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </a>
+          </div>
+          <div class="slide_box">
+            <figure>
+              <img class="img" src="./img/golf01.jpg" alt="" />
+            </figure>
+            <h3>DUAL BLADE|2026 New Metallic Hues</h3>
+          </div>
+          <section class="btns_wrap">
+            <div class="btn_group">
+              <ul class="group_left">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="group_right">
+                <i class="fa-solid fa-chevron-left"></i>
+                <span>|</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- 媒體區 結束-->
+    </main>
+    <!-- 網站主要容區 結束 -->
+    <!-- 頁尾 開始 -->
+    <footer>
+      <!-- 左邊 開始 -->
+      <div class="left_content">
+        <!-- logo -->
+        <figure>
+          <img class="img" src="./img/Logo.png" alt="logo test" />
+        </figure>
+        <!-- 聯絡資訊 -->
+        <div class="contact_info">
+          <table>
+            <tr>
+              <th>ADD</th>
+              <td>
+                <a href="#"
+                  >4F, No. 44, Lane 80, Nangang Rd., Sec. 3, Taipei City, 115
+                  Taiwan</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th>TEL</th>
+              <td><a href="#">+886 2 0000 0000</a></td>
+            </tr>
+            <tr>
+              <th>MAIL</th>
+              <td><a href="#">sales@test.com</a></td>
+            </tr>
+          </table>
+        </div>
+        <!-- 社群媒體 -->
+        <div class="social_media">
+          <p>FOLLOW US</p>
+          <div class="media_sign">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-line"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <!-- 版權 -->
+        <div class="copyright">
+          <span>Copyright &copy;</span>
+          <span class="year">2026</span>
+          <span>GREATIM</span>
+          <span>All rights reserved</span>
+        </div>
+      </div>
+      <!-- 左邊 結束 -->
+      <div class="contact_box">
+        <p>Contact Us</p>
+        <form action="">
+          <!-- request type -->
+          <div class="form_column request_wrap">
+            <label for="request">Request</label>
+            <select name="request" id="request">
+              <option selected>Select</option>
+              <option value="order">Order</option>
+              <option value="inquiry">Inquiry</option>
+              <option value="service">Service</option>
+            </select>
+          </div>
+          <!-- second row -->
+          <div class="two_column">
+            <!-- name -->
+            <div class="input_wrap">
+              <label for="name"><span>*</span>Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <!-- email -->
+            <div class="input_wrap">
+              <label for="email"><span>*</span>Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+          </div>
+          <!-- third row -->
+          <div class="two_column">
+            <!-- phone -->
+            <div class="input_wrap">
+              <label for="phone"><span></span>Phone</label>
+              <input type="phone" name="phone" id="phone" />
+            </div>
+            <!-- cell phone -->
+            <div class="input_wrap">
+              <label for="cellphone"><span>*</span>Cell Phone</label>
+              <input type="phone" name="cellphone" id="cellphone" />
+            </div>
+          </div>
+          <!-- forth row -->
+          <div class="comment">
+            <label for="comment"><span>*</span>Comment</label>
+            <textarea name="comment" id="comment" rows="6"></textarea>
+          </div>
+          <div class="btn_box">
+            <a type="submit">Submit</a>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <!-- 頁尾 結束 -->
+    <!-- 側邊欄選單 開始 -->
+    <section class="hamburger_sidemenu_area">
+      <div class="ham_menu_wrap">
+        <!-- logo 和 關閉鍵 -->
+        <div class="logo_close_btn">
+          <img src="./img/Logo.png" alt="logo test" />
+          <div class="close_btn">
+            <span class="line"></span>
+          </div>
+        </div>
+        <ul class="ham_menu_list">
+          <li>
+            <a class="ham_menu" href="javascript:0">About Us<span>+</span></a>
+            <div class="submenu"><a href="#">Story</a></div>
+          </li>
+          <li>
+            <a class="ham_menu" href="javascript:0">Product<span>+</span></a>
+            <div class="submenu">
+              <a href="#">Golf Life | DISCBRAKE</a>
+              <a href="#">Golf Life | DUAL BLADE</a>
+            </div>
+          </li>
+          <li>
+            <a class="ham_menu" href="javascript:0">News<span>+</span></a>
+            <div class="submenu">
+              <a href="#">Events</a>
+              <a href="#">Media</a>
+            </div>
+          </li>
+          <li>
+            <a class="ham_menu" href="javascript:0">Download<span>+</span></a>
+            <div class="submenu"><a href="#">Catalog</a></div>
+          </li>
+          <li><a class="ham_menu" href="#">Contact</a></li>
+        </ul>
+        <div class="sign_items">
+          <a class="search_btn" href="javascript:0"
+            ><i class="fa-brands fa-sistrix"></i><span>Search</span></a
+          >
+          <div class="social_media">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 側邊欄選單 結束 -->
+    <!-- searchBox 開始 -->
+    <section class="searchbox">
+      <div class="searchbox_filter"></div>
+      <!-- 內容顯示框 -->
+      <div class="searchbox_block">
+        <!-- 關閉按鈕 -->
+        <div class="searchbox_close_btn">
+          <span class="line"></span>
+        </div>
+        <div class="searchbox_content">
+          <p>Search</p>
+          <!-- 輸入框 -->
+          <div class="search_input">
+            <input type="text" placeholder="Product Search" /><i
+              class="fa-solid fa-magnifying-glass"
+            ></i
+            ><!-- 搜尋圖示 -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- searchBox 結束 -->
+    <script src="./app.js"></script>
+  </body>
+</html>
