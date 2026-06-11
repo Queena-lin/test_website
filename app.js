@@ -38,17 +38,17 @@ const gray_filter = document.querySelector(".gray_filter"),
 // #endregion
 
 // 監聽載入事件，loading animation執行後關閉
-// window.addEventListener("load", () => {
-//   document.body.classList.add("no_scroll");
-//   setTimeout(() => {
-//     const load_animation = document.querySelector(".load_animation");
-//     load_animation.style.opacity = 0;
-//     setTimeout(() => {
-//       load_animation.style.display = "none";
-//       document.body.classList.remove("no_scroll");
-//     }, 550);
-//   }, 2200);
-// });
+window.addEventListener("load", () => {
+  document.body.classList.add("no_scroll");
+  setTimeout(() => {
+    const load_animation = document.querySelector(".load_animation");
+    load_animation.style.opacity = 0;
+    setTimeout(() => {
+      load_animation.style.display = "none";
+      document.body.classList.remove("no_scroll");
+    }, 550);
+  }, 2200);
+});
 
 //window監聽enter鍵，禁止按enter
 window.addEventListener("keydown", (e) => {
