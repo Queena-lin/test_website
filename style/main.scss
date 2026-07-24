@@ -398,14 +398,14 @@ body {
           padding: 0 10px;
         }
         p {
-          &:nth-child(2) {
+          &:first-child {
             font-size: 2em;
           }
           &:last-child {
             font-size: 8em;
           }
           @include rwd(smallD) {
-            &:nth-child(2) {
+            &:first-child {
               font-size: 1.2em;
             }
             &:last-child {

@@ -359,14 +359,14 @@ body header .banner_wrap .banner_text {
     padding: 0 10px;
   }
 }
-body header .banner_wrap .banner_text p:nth-child(2) {
+body header .banner_wrap .banner_text p:first-child {
   font-size: 2em;
 }
 body header .banner_wrap .banner_text p:last-child {
   font-size: 8em;
 }
 @media screen and (max-width: 768px) {
-  body header .banner_wrap .banner_text p:nth-child(2) {
+  body header .banner_wrap .banner_text p:first-child {
     font-size: 1.2em;
   }
   body header .banner_wrap .banner_text p:last-child {
