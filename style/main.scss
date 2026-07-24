@@ -34,6 +34,7 @@ $themeLightGrey: #aaa;
 .hamburger_sidemenu_area:20
 .gray_filter:10
 nav.top_navbar:5
+.disclaimer-banner:4
 #endregion */
 * {
   margin: 0;
@@ -302,6 +303,20 @@ body {
       }
     }
     //導覽列 結束
+    //仿作聲明
+    .disclaimer-banner {
+      position: absolute;
+      top: 90px;
+      left: 0;
+      z-index: 4;
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      border-bottom: 1px solid #ffeeba;
+    }
     //橫幅
     .banner_wrap {
       width: 100%;
@@ -383,14 +398,14 @@ body {
           padding: 0 10px;
         }
         p {
-          &:first-child {
+          &:nth-child(2) {
             font-size: 2em;
           }
           &:last-child {
             font-size: 8em;
           }
           @include rwd(smallD) {
-            &:first-child {
+            &:nth-child(2) {
               font-size: 1.2em;
             }
             &:last-child {
